@@ -77,7 +77,7 @@ fun PantallaInicio() {
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "Texto principal de tu app",
+                text = "Lecturas",
                 fontSize = 18.sp,
                 textAlign = TextAlign.Center
             )
@@ -92,7 +92,8 @@ fun PantallaInicio() {
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "Mensaje importante",
+                text = "Parroquia La Epifania " +
+                        "\n Parroquia Ntra. Sra. De Lourdes",
                 color = Color.White,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
@@ -109,15 +110,15 @@ fun PantallaInicio() {
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                Tarjeta("Opción 1", Modifier.weight(1f), rojo)
-                Tarjeta("Opción 2", Modifier.weight(1f), rojo)
+                Tarjeta("Canciones", Modifier.weight(1f), rojo)
+                Tarjeta("Los Avisos Parroquiales", Modifier.weight(1f), rojo)
             }
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                Tarjeta("Opción 3", Modifier.weight(1f), rojo)
-                Tarjeta("Opción 4", Modifier.weight(1f), rojo)
+                Tarjeta("Palabras de parroco", Modifier.weight(1f), rojo)
+                Tarjeta("La historia de la parroquia", Modifier.weight(1f), rojo)
             }
         }
     }
