@@ -50,23 +50,16 @@ fun PantallaInicio() {
             .padding(bottom = 24.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
-        // 1. Encabezado azul con imagen
-        Box(
+        // 1. Imagen de encabezado (sin marco azul)
+        Image(
+            painter = painterResource(id = R.drawable.imagen_superior),
+            contentDescription = "Imagen superior",
+            contentScale = ContentScale.Crop,
             modifier = Modifier
                 .fillMaxWidth()
-                .background(azul, RoundedCornerShape(bottomStart = 32.dp, bottomEnd = 32.dp))
-                .padding(12.dp)
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.header_banner),
-                contentDescription = "Imagen de encabezado",
-                contentScale = ContentScale.Crop,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(180.dp)
-                    .clip(RoundedCornerShape(12.dp))
-            )
-        }
+                .height(220.dp)
+                .clip(RoundedCornerShape(bottomStart = 32.dp, bottomEnd = 32.dp))
+        )
 
         // 2. Tarjeta gris principal
         Box(
